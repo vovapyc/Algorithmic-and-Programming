@@ -73,9 +73,9 @@ int main()
     cout << endl;
 
     // Градуси кутів
-    double degrSideA = cosToDeg(cosSideA);
-    double degrSideB = cosToDeg(cosSideB);
-    double degrSideC = cosToDeg(cosSideC);
+    double degrSideA = cosToDeg((double) acos(cosSideA));
+    double degrSideB = cosToDeg((double) acos(cosSideB));
+    double degrSideC = cosToDeg((double) acos(cosSideC));
 
     cout << "A: " << degrSideA << " "; angleDefinition(degrSideA);
     cout << "B: " << degrSideB << " "; angleDefinition(degrSideB);
