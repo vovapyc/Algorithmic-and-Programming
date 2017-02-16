@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/PhoneBook.dir/main.cpp.o  -o PhoneBook.exe -Wl,--out-implib,libPhoneBook.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
