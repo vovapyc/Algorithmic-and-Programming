@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -g  -Wl,--enable-auto-import CMakeFiles/Paravizik.dir/main.cpp.o  -o Paravizik.exe -Wl,--out-implib,libParavizik.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
