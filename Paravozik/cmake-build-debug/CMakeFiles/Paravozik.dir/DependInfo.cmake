@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/d/Develop/Cpp/Paravizik/main.cpp" "/cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug/CMakeFiles/Paravizik.dir/main.cpp.o"
+  "/cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/main.cpp" "/cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug/CMakeFiles/Paravozik.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

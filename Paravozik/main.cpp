@@ -4,19 +4,12 @@
 
 using namespace std;
 
-struct date {
-    short year;
-    short mouth;
-    short day;
-    short hour;
-    short minute;
-};
-
 struct train {
     unsigned long number;
     string to;
     string from;
-    date time;  // TODO: час прибуття і ...
+    string arrivalTime;  // прибуття
+    string departureTime;  // відправлення
 };
 
 int main() {
@@ -33,8 +26,10 @@ int main() {
         cin >> trains[index].from;
         cout << "Куда: ";
         cin >> trains[index].to;
+        cout << "Час прибуття (у форматі рік/місяць/день/година/хвилини): ";
+        cin >> trains[index].arrivalTime;
         cout << "Час відправлення (у форматі рік/місяць/день/година/хвилини): ";
-        cin >> trains[index].time;  // TODO:  написати перевід у unix time
+        cin >> trains[index].departureTime;
 
         index++;
         cout << endl;
@@ -51,11 +46,11 @@ int main() {
     {
         for (int j = 0; j < i; j++)
         {
-            if (trains[j].time > trains[j + 1].time)
+            if (trains[j].departureTime > trains[j + 1].departureTime)
             {
-                auto tmp = trains[j].time;
-                trains[j].time = trains[j + 1].time;
-                trains[j + 1].time = tmp;
+                auto tmp = trains[j].departureTime;
+                trains[j].departureTime = trains[j + 1].departureTime;
+                trains[j + 1].departureTime = tmp;
             }
         }
     }
@@ -65,13 +60,15 @@ int main() {
         cout << left << i << '\t';
         cout << left << setw(15) << trains[i].number << '\t';
         cout << left << setw(30) << trains[i].from + " - " + trains[i].to << '\t';
-        cout << left << setw(30) << trains[i].time;  // TODO: Написати перевід у unix time
+        cout << left << setw(30) << trains[i].arrivalTime;
+        cout << " : ";
+        cout << left << setw(30) << trains[i].departureTime;
         cout << endl;
     }
 
     // Пошук
     check = 'n';
-    cout << "Виконати пошук по контактах за номерами?(y/n): ";
+    cout << "Виконати пошук по рейсах за номером?(y/n): ";
     cin >> check;
     if (check == 'y' || check == 'Y') {
         unsigned long number;
@@ -82,7 +79,7 @@ int main() {
                 cout << left << i << '\t';
                 cout << left << setw(15) << trains[i].number << '\t';
                 cout << left << setw(30) << trains[i].from + " - " + trains[i].to << '\t';
-                cout << left << setw(30) << trains[i].time;  // TODO: Написати перевід у unix time
+                cout << left << trains[i].arrivalTime << " : " << trains[i].departureTime;
                 cout << endl;
             }
             else {

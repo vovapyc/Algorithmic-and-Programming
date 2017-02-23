@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Paravozik/.idea/Paravizik.iml" filepath="$PROJECT_DIR$/../Paravozik/.idea/Paravizik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Paravozik.iml" filepath="$PROJECT_DIR$/.idea/Paravozik.iml" />
     </modules>
   </component>
 </project>

@@ -54,45 +54,45 @@ RM = /cygdrive/c/Users/vovaw/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/Develop/Cpp/Paravizik
+CMAKE_SOURCE_DIR = /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Paravizik.dir
+# Target rules for target CMakeFiles/Paravozik.dir
 
 # All Build rule for target.
-CMakeFiles/Paravizik.dir/all:
-	$(MAKE) -f CMakeFiles/Paravizik.dir/build.make CMakeFiles/Paravizik.dir/depend
-	$(MAKE) -f CMakeFiles/Paravizik.dir/build.make CMakeFiles/Paravizik.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Paravizik"
-.PHONY : CMakeFiles/Paravizik.dir/all
+CMakeFiles/Paravozik.dir/all:
+	$(MAKE) -f CMakeFiles/Paravozik.dir/build.make CMakeFiles/Paravozik.dir/depend
+	$(MAKE) -f CMakeFiles/Paravozik.dir/build.make CMakeFiles/Paravozik.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Paravozik"
+.PHONY : CMakeFiles/Paravozik.dir/all
 
 # Include target in all.
-all: CMakeFiles/Paravizik.dir/all
+all: CMakeFiles/Paravozik.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Paravizik.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Paravizik.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Paravizik.dir/rule
+CMakeFiles/Paravozik.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Paravozik.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Paravozik.dir/rule
 
 # Convenience name for target.
-Paravizik: CMakeFiles/Paravizik.dir/rule
+Paravozik: CMakeFiles/Paravozik.dir/rule
 
-.PHONY : Paravizik
-
-# clean rule for target.
-CMakeFiles/Paravizik.dir/clean:
-	$(MAKE) -f CMakeFiles/Paravizik.dir/build.make CMakeFiles/Paravizik.dir/clean
-.PHONY : CMakeFiles/Paravizik.dir/clean
+.PHONY : Paravozik
 
 # clean rule for target.
-clean: CMakeFiles/Paravizik.dir/clean
+CMakeFiles/Paravozik.dir/clean:
+	$(MAKE) -f CMakeFiles/Paravozik.dir/build.make CMakeFiles/Paravozik.dir/clean
+.PHONY : CMakeFiles/Paravozik.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Paravozik.dir/clean
 
 .PHONY : clean
 

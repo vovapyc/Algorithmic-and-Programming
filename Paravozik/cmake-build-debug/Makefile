@@ -48,10 +48,10 @@ RM = /cygdrive/c/Users/vovaw/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/Develop/Cpp/Paravizik
+CMAKE_SOURCE_DIR = /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug/CMakeFiles /cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug/CMakeFiles /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Develop/Cpp/Paravizik/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Develop/Cpp/Algorithmic-and-Programming/Paravozik/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Paravizik
+# Target rules for targets named Paravozik
 
 # Build rule for target.
-Paravizik: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Paravizik
-.PHONY : Paravizik
+Paravozik: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Paravozik
+.PHONY : Paravozik
 
 # fast build rule for target.
-Paravizik/fast:
-	$(MAKE) -f CMakeFiles/Paravizik.dir/build.make CMakeFiles/Paravizik.dir/build
-.PHONY : Paravizik/fast
+Paravozik/fast:
+	$(MAKE) -f CMakeFiles/Paravozik.dir/build.make CMakeFiles/Paravozik.dir/build
+.PHONY : Paravozik/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Paravizik.dir/build.make CMakeFiles/Paravizik.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Paravozik.dir/build.make CMakeFiles/Paravozik.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Paravizik.dir/build.make CMakeFiles/Paravizik.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Paravozik.dir/build.make CMakeFiles/Paravozik.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Paravizik.dir/build.make CMakeFiles/Paravizik.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Paravozik.dir/build.make CMakeFiles/Paravozik.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Paravizik"
+	@echo "... Paravozik"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
