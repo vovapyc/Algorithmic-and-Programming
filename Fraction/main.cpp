@@ -16,6 +16,8 @@ private:
     long numerator;
     long denominator;
 public:
+    Fraction(): numerator(1), denominator(1) {}
+    Fraction(long n, long d): numerator(n), denominator(d) {}
     void set(long numerator, long denominator) {
         this->numerator = numerator;
         this->denominator = denominator;
@@ -26,7 +28,7 @@ public:
     long getDenominator() {
         return denominator;
     }
-    void intput() {
+    void input() {
         long numerator;
         long denominator;
         cout << "Enter numerator: ";
@@ -43,35 +45,56 @@ public:
         numerator /= gcd;
         denominator /= gcd;
     }
+    double getRealNumber() {
+        // Повертає дійсне число
+        return numerator/ denominator;
+    }
+    Fraction operator+(Fraction num) {
+        return Fraction((num.getNumerator() * this->denominator + num.getDenominator() * this->numerator),
+                        num.getDenominator() * this->denominator);
+    }
+    Fraction operator-(Fraction num) {
+        return Fraction((num.getNumerator() * this->denominator - num.getDenominator() * this->numerator),
+                        num.getDenominator() * this->denominator);
+    }
+    Fraction operator!() {
+        return Fraction(denominator, numerator);
+    }
+    bool operator<(Fraction num) {
+        return getRealNumber() < num.getRealNumber();
+    }
+    bool operator>(Fraction num) {
+        return getRealNumber() > num.getRealNumber();
+    }
+    bool operator<=(Fraction num) {
+        return getRealNumber() <= num.getRealNumber();
+    }
+    bool operator>=(Fraction num) {
+        return getRealNumber() >= num.getRealNumber();
+    }
 };
-
-Fraction add(Fraction num1, Fraction num2) {
-    Fraction result;
-    result.set((num1.getNumerator() * num2.getDenominator() + num1.getDenominator() * num2.getNumerator()),
-               num1.getDenominator() * num2.getDenominator());
-    return result;
-}
-
-Fraction min(Fraction num1, Fraction num2) {
-    Fraction result;
-    result.set((num1.getNumerator() * num2.getDenominator() - num1.getDenominator() * num2.getNumerator()),
-               num1.getDenominator() * num2.getDenominator());
-    return result;
-}
 
 int main()
 {
-    Fraction a, b;
-    a.set(1, 2);
-    b.set(1, 4);
+    Fraction a(1, 3);
+    Fraction b(3, 2);
 
-    Fraction result = add(a, b);
-    result.shortly();
-    result.print();
+    Fraction c = a + b;
+    c.shortly();
+    c.print();
 
-    result = min(a, b);
-    result.shortly();
-    result.print();
+    c = a - b;
+    c.shortly();
+    c.print();
+
+    c = !c;
+    c.print();
+
+    if (a > b) {
+        cout << "a > b" << endl;
+    } else {
+        cout << "a <= b" << endl;
+    }
 
     // system("pause");  Для vs
 }
