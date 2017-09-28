@@ -12,7 +12,7 @@ private:
     short monthOfBirth;
 public:
     void input() {
-        cin.ignore();
+        cin.ignore();  // Без цеї хуйні getline не працює
         cout << "Enter name: "; getline(cin, name);
         cout << "Day of birthday: "; cin >> dayOfBirth;
         cout << "Month of birthday: "; cin >> monthOfBirth;
