@@ -21,7 +21,7 @@ void func(int** arr, int n)
 
 int main()
 {
-    const short size = 6; // Має ділитись на 6
+    const short size = 12; // Має ділитись на 6
     int** array = new int*[size];
     for(int i = 0; i < size; ++i) {
         array[i] = new int[size];
